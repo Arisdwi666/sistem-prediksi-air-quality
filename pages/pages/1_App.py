@@ -14,7 +14,7 @@ st.set_page_config(
     page_icon="📝",
 )
 
-filename = '../models/SVM_Model.pkl'
+filename = 'models/SVM_Model.pkl'
 loaded_model = pickle.load(open(filename, 'rb'))
 # Inisialisasi Firebase
 cred = credentials.Certificate("../js/esp32-try-5fddb-firebase-adminsdk-bj5sn-931fb2b72d.json")
