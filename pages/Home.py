@@ -18,4 +18,4 @@ st.markdown(
     **👈 Select a demo from the sidebar** 
     """
 )
-st.image("../image/logo.jpg", caption='Prediksi Kualitas Udara')
+st.image("image/logo.jpg", caption='Prediksi Kualitas Udara')
