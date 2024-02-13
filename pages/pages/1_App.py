@@ -17,7 +17,7 @@ st.set_page_config(
 filename = 'models/SVM_Model.pkl'
 loaded_model = pickle.load(open(filename, 'rb'))
 # Inisialisasi Firebase
-cred = credentials.Certificate("../js/esp32-try-5fddb-firebase-adminsdk-bj5sn-931fb2b72d.json")
+cred = credentials.Certificate("js/esp32-try-5fddb-firebase-adminsdk-bj5sn-931fb2b72d.json")
 # Check if the app is not already initialized
 if not firebase_admin._apps:
     # Initialize the Firebase app
@@ -66,7 +66,7 @@ predict_btn = st.button("Predict", type=("primary"))
 result = ":violet[-]"
 st.write("")
 
-load_scaler = joblib.load('../models/MinMaxScaler.pkl')
+load_scaler = joblib.load('models/MinMaxScaler.pkl')
 
 
 inputs = [[pm_10, pm_25, so2, co, o3, no2]]
